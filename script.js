@@ -29,9 +29,13 @@ const data = {
 };
 
 const downloadLinks = {
-  "windows_Windows 7_Professional_x86_Français": "https://archive.org/download/win-7-pro-french-COEM/Win7_Pro_SP1_French_COEM_x86.iso",
-  "windows_Windows 7_Professional_x64_Français": "https://archive.org/download/win-7-pro-french-COEM/Win7_Pro_SP1_French_COEM_x64.iso"
-};
+    "windows_Windows 7_Professional_x86_Français": "https://archive.org/download/win-7-pro-french-COEM/Win7_Pro_SP1_French_COEM_x86.iso",
+    "windows_Windows 7_Professional_x64_Français": "https://archive.org/download/win-7-pro-french-COEM/Win7_Pro_SP1_French_COEM_x64.iso",
+    "windows_Windows 7_Ultimate_x64_Français": "https://archive.org/download/Windows7UltimateSP1x64French/fr_windows_7_ultimate_with_sp1_x64_dvd_u_677299.iso",
+    "windows_Windows 7_Ultimate_x86_Français": "https://archive.org/download/Windows7UltimateSP1x86French/fr_windows_7_ultimate_with_sp1_x86_dvd_u_677434.iso",
+    "windows_Windows 7_Home Premium_x64_Français": "https://archive.org/download/windows-7-home-premium-french/Win7_HomePrem_SP1_French_x64.iso",
+    "windows_Windows 7_Home Premium_x86_Français": "https://archive.org/download/windows-7-home-premium-french/Win7_HomePrem_SP1_French_x32.iso"
+  };  
 
 function resetSelect(selectElement) {
   selectElement.selectedIndex = 0;
