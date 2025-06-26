@@ -14,7 +14,11 @@ const data = {
     "Windows 10": {
       editions: ["Pro", "Home", "Enterprise"],
       languages: ["Français", "Anglais", "Allemand"]
-    }
+    },
+    "Windows XP": {
+        editions: ["Professional"],
+        languages: ["Français"]
+      }
   },
   linux: {
     "Ubuntu": {
@@ -66,6 +70,8 @@ const downloadLinks = {
     "windows_Windows 10_Home_x86_Français": "https://archive.org/download/win-10-22-h-2-french-x-32/Win10_22H2_French_x32.iso",
     "windows_Windows 10_Pro_x86_Français": "https://archive.org/download/win-10-22-h-2-french-x-32/Win10_22H2_French_x32.iso",
     "windows_Windows 10_Enterprise_x86_Français": "https://archive.org/download/win-10-22-h-2-french-x-32/Win10_22H2_French_x32.iso",
+    // Windows XP
+    "windows_Windows XP_Professional_x86_Français": "https://archive.org/download/fr_windows_xp_professional_with_service_pack_3_x86_cd_vl_x14-73982_202012/fr_windows_xp_professional_with_service_pack_3_x86_cd_vl_x14-73982.iso" ,
     // Ubuntu 
     "linux_Ubuntu_24.04 LTS_x64_Multilangue": "https://releases.ubuntu.com/24.04.2/ubuntu-24.04.2-desktop-amd64.iso",
     "linux_Ubuntu_25.04_x64_Multilangue": "https://releases.ubuntu.com/25.04/ubuntu-25.04-desktop-amd64.iso",
