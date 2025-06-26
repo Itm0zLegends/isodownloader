@@ -25,6 +25,28 @@ const data = {
       editions: ["12.11 Bookworm"],
       languages: ["Multilangue"]
     }
+  },
+  macOS: {
+    "Sequoia": {
+      editions: ["15.5"],
+      languages: ["Multilangue"]
+    },
+    "Sonoma": {
+      editions: ["14.7.6"],
+      languages: ["Multilangue"]
+    },
+    "Ventura": {
+        editions: ["13.0.1"],
+        languages: ["Multilangue"]
+      },
+    "Monterey": {
+      editions: ["12.6.1"],
+      languages: ["Multilangue"]
+    }, 
+    "Big Sur": {
+        editions: ["11.7.1"],
+        languages: ["Multilangue"]
+      }    
   }
 };
 
@@ -48,8 +70,14 @@ const downloadLinks = {
     "linux_Ubuntu_24.04 LTS_x64_Multilangue": "https://releases.ubuntu.com/24.04.2/ubuntu-24.04.2-desktop-amd64.iso",
     "linux_Ubuntu_25.04_x64_Multilangue": "https://releases.ubuntu.com/25.04/ubuntu-25.04-desktop-amd64.iso",
     // Debian
-    "linux_Debian_12.11 Bookworm_x64_Multilangue": "https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.11.0-amd64-netinst.iso"
-  };  
+    "linux_Debian_12.11 Bookworm_x64_Multilangue": "https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.11.0-amd64-netinst.iso",
+    // macOS
+    "macOS_Sequoia_15.5_x64_Multilangue": "#",
+    "macOS_Sonoma_14.7.6_x64_Multilangue": "#",
+    "macOS_Ventura_13.0.1_x64_Multilangue": "https://archive.org/download/macos_iso/Ventura_13.0.1.iso",
+    "macOS_Monterey_12.6.1_x64_Multilangue": "https://archive.org/download/macos_iso/Monterey_12.6.1.iso",
+    "macOS_Big Sur_11.7.1_x64_Multilangue": "https://archive.org/download/macos_iso/BigSur_11.7.1.iso"
+  }; 
 
 function resetSelect(selectElement) {
   selectElement.selectedIndex = 0;
