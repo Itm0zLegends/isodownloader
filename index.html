@@ -3,56 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Télécharger - ISO DOWNLOADER</title>
+  <title>Accueil - ISO DOWNLOADER</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="logo.png" type="image/png" />
+  <style>
+    body {
+      background: #121212;
+      color: #ddd;
+      font-family: Arial, sans-serif;
+      margin: 30;
+      padding: 65px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      margin-top: 70px;
+      flex: 1;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px;
+      background: #1e1e1e;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.7);
+    }
+    h1 {
+      text-align: center;
+      color: #4dabf7;
+      margin-bottom: 20px;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #777;
+      background: transparent;
+    }
+  </style>
 </head>
 <body>
 
   <nav>
     <div class="logo">ISO DOWNLOADER</div>
     <ul>
-      <li><a href="#">Accueil</a></li>
-      <li><a href="#">Téléchargements</a></li>
-      <li><a href="nouveautés.html">Nouveautés</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="index.html" class="active">Accueil</a></li>
+      <li><a href="telechargements.html">Téléchargements</a></li>
+      <li><a href="nouveautes.html">Nouveautés</a></li> 
     </ul>
   </nav>
 
-  <main>
-    <h1>Installateur ISO</h1>
-
-    <select id="osSelect">
-      <option value="">Choisir un OS</option>
-      <option value="windows">Windows</option>
-      <option value="linux">Linux</option>
-      <option value="macOS">macOS</option>
-    </select>
-
-    <select id="versionSelect" disabled>
-      <option value="">Choisir une version</option>
-    </select>
-
-    <select id="editionSelect" disabled>
-      <option value="">Choisir une édition</option>
-    </select>
-
-    <select id="archSelect" disabled>
-      <option value="">Choisir une architecture</option>
-      <option value="x86">x86 (32 bits)</option>
-      <option value="x64">x64 (64 bits)</option>
-    </select>
-
-    <select id="languageSelect" disabled>
-      <option value="">Choisir une langue</option>
-    </select>
-
-    <button id="downloadBtn" disabled>Télécharger ISO</button>
-
-    <footer>
-        <p>Créé avec ❤️ par Itm0z | &copy; 2025 Itm0z</p>
-    </footer>
-  </main>
-
-  <script src="script.js"></script>
+<main>
+  <h1>Bienvenue sur ISO DOWNLOADER</h1>
+  <p>
+    Téléchargez rapidement et en toute sécurité les dernières versions de vos ISO préférées. <br> Découvrez un large choix de systèmes d’exploitation, accédez aux dernières mises à jour pour Windows, Linux et macOS, et trouvez facilement l’image disque qu’il vous faut pour installer, réinstaller ou tester un système. <br> ISO DOWNLOADER vous simplifie la vie en centralisant tout ce dont vous avez besoin pour vos installations.
+  </p>
+  <br>
+  <h1>Pourquoi choisir ISO DOWNLOADER ?</h1>
+      <p> • Sources officielles et sécurisées</p>
+      <p> • Ajouts d'ISO régulières !</p>      
+      <p> • Mises à jour régulières des ISO</p>
+      <p> • Large choix de versions et d’architectures</p>
+  <br>
+  <br>
+  <footer>
+    <p>Créé avec ❤️ par Itm0z | &copy; 2025 Itm0z</p>
+  </footer>
+</main>
 </body>
 </html>

@@ -63,36 +63,41 @@ button:disabled {
   cursor: not-allowed;
 }
 
-nav {
-  width: 100%;
-  background: #00458f;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 25px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  border-radius: 3px;
-}
-
-nav .logo {
-  color: white;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
+    nav {
+      width: 100%;
+      background: #007bff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+    nav .logo {
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 5px 8px;
+      border-radius: 4px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
 
 .news-item {
   background: #2c2c2c;

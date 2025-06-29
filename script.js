@@ -7,17 +7,25 @@ const downloadBtn = document.getElementById('downloadBtn');
 
 const data = {
   windows: {
-    "Windows 7": {
-      editions: ["Ultimate", "Professional", "Home Premium"],
-      languages: ["Français", "Anglais", "Espagnol"]
+    "Windows 11": {
+      editions: ["MultiEdition"],
+      languages: ["Français"]
     },
     "Windows 10": {
-      editions: ["Pro", "Home", "Enterprise"],
-      languages: ["Français", "Anglais", "Allemand"]
+      editions: ["MultiEdition"],
+      languages: ["Français", "Anglais"]
     },
+    "Windows 8.1": {
+      editions: ["Home", "Pro", "Enterprise"],
+      languages: ["Français", "Anglais", "Italien", "Espagnol"]
+    },      
+    "Windows 7": {
+      editions: ["Ultimate", "Professional", "Home Premium"],
+      languages: ["Français", "Anglais"]
+    },  
     "Windows XP": {
         editions: ["Professional"],
-        languages: ["Français"]
+        languages: ["Français", "Anglais"]
       }
   },
   linux: {
@@ -55,23 +63,62 @@ const data = {
 };
 
 const downloadLinks = {
-    // Français :
     // Windows 7
+    // Français
     "windows_Windows 7_Professional_x86_Français": "https://archive.org/download/win-7-pro-french-COEM/Win7_Pro_SP1_French_COEM_x86.iso",
     "windows_Windows 7_Professional_x64_Français": "https://archive.org/download/win-7-pro-french-COEM/Win7_Pro_SP1_French_COEM_x64.iso",
     "windows_Windows 7_Ultimate_x64_Français": "https://archive.org/download/Windows7UltimateSP1x64French/fr_windows_7_ultimate_with_sp1_x64_dvd_u_677299.iso",
     "windows_Windows 7_Ultimate_x86_Français": "https://archive.org/download/Windows7UltimateSP1x86French/fr_windows_7_ultimate_with_sp1_x86_dvd_u_677434.iso",
     "windows_Windows 7_Home Premium_x64_Français": "https://archive.org/download/windows-7-home-premium-french/Win7_HomePrem_SP1_French_x64.iso",
     "windows_Windows 7_Home Premium_x86_Français": "https://archive.org/download/windows-7-home-premium-french/Win7_HomePrem_SP1_French_x32.iso",
+    // Anglais
+    "windows_Windows 7_Professional_x86_Anglais": "https://archive.org/download/windows-7-sp0-sp1-msdn-iso-files-en-de-ru-tr-x86-x64/en_windows_7_professional_with_sp1_vl_build_x86_dvd_u_677896.iso",
+    "windows_Windows 7_Professional_x64_Anglais": "https://archive.org/download/windows-7-sp0-sp1-msdn-iso-files-en-de-ru-tr-x86-x64/en_windows_7_professional_with_sp1_vl_build_x64_dvd_u_677791.iso",
+    "windows_Windows 7_Ultimate_x64_Anglais": "https://archive.org/download/win7-ult-sp1-english/Win7_Ult_SP1_English_x64.iso",
+    "windows_Windows 7_Ultimate_x86_Anglais": "https://archive.org/download/win7-ult-sp1-english/Win7_Ult_SP1_English_x32.iso",
+    "windows_Windows 7_Home Premium_x64_Anglais": "https://archive.org/download/windows-7-home-prem-english/Win7_HomePrem_SP1_English_x64.iso",
+    "windows_Windows 7_Home Premium_x86_Anglais": "https://archive.org/download/windows-7-home-prem-english/Win7_HomePrem_SP1_English_x32.iso",
+    // Windows 8.1
+    // Français
+    "windows_Windows 8.1_Home_x64_Français": "https://archive.org/download/win-8.1/Win8.1_French_x64.iso",
+    "windows_Windows 8.1_Pro_x64_Français": "https://archive.org/download/win-8.1/Win8.1_French_x64.iso",
+    "windows_Windows 8.1_Entreprise_x64_Français": "https://archive.org/download/win-8.1/Win8.1_French_x64.iso",
+    "windows_Windows 8.1_Home_x86_Français": "https://archive.org/download/win-8.1/Win8.1_French_x32.iso",
+    "windows_Windows 8.1_Pro_x86_Français": "https://archive.org/download/win-8.1/Win8.1_French_x32.iso",
+    "windows_Windows 8.1_Entreprise_x86_Français": "https://archive.org/download/win-8.1/Win8.1_French_x32.iso",
+    // Anglais
+    "windows_Windows 8.1_Home_x64_Anglais": "https://archive.org/download/win-8.1/Win8.1_EnglishUS_x64.iso",
+    "windows_Windows 8.1_Pro_x64_Anglais": "https://archive.org/download/win-8.1/Win8.1_EnglishUS_x64.iso",
+    "windows_Windows 8.1_Entreprise_x64_Anglais": "https://archive.org/download/win-8.1/Win8.1_EnglishUS_x64.iso",
+    "windows_Windows 8.1_Home_x86_Anglais": "https://archive.org/download/win-8.1/Win8.1_EnglishUS_x32.iso",
+    "windows_Windows 8.1_Pro_x86_Anglais": "https://archive.org/download/win-8.1/Win8.1_EnglishUS_x32.iso",
+    "windows_Windows 8.1_Entreprise_x86_Anglais": "https://archive.org/download/win-8.1/Win8.1_EnglishUS_x32.iso",
+    // Italien
+    "windows_Windows 8.1_Home_x64_Italien": "https://archive.org/download/win-8.1/Win8.1_Italian_x64.iso",
+    "windows_Windows 8.1_Pro_x64_Italien": "https://archive.org/download/win-8.1/Win8.1_Italian_x64.iso",
+    "windows_Windows 8.1_Entreprise_x64_Italien": "https://archive.org/download/win-8.1/Win8.1_Italian_x64.iso",
+    "windows_Windows 8.1_Home_x86_Italien": "https://archive.org/download/win-8.1/Win8.1_Italian_x32.iso",
+    "windows_Windows 8.1_Pro_x86_Italien": "https://archive.org/download/win-8.1/Win8.1_Italian_x32.iso",
+    "windows_Windows 8.1_Entreprise_x86_Italien": "https://archive.org/download/win-8.1/Win8.1_Italian_x32.iso",  
+    // Espagnol
+    "windows_Windows 8.1_Home_x64_Espagnol": "https://archive.org/download/win-8.1/Win8.1_Spanish_x64.iso",
+    "windows_Windows 8.1_Pro_x64_Espagnol": "https://archive.org/download/win-8.1/Win8.1_Spanish_x64.iso",
+    "windows_Windows 8.1_Entreprise_x64_Espagnol": "https://archive.org/download/win-8.1/Win8.1_Spanish_x64.iso",
+    "windows_Windows 8.1_Home_x86_Espagnol": "https://archive.org/download/win-8.1/Win8.1_Spanish_x32.iso",
+    "windows_Windows 8.1_Pro_x86_Espagnol": "https://archive.org/download/win-8.1/Win8.1_Spanish_x32.iso",
+    "windows_Windows 8.1_Entreprise_x86_Espagnol": "https://archive.org/download/win-8.1/Win8.1_Spanish_x32.iso",
     // Windows 10
-    "windows_Windows 10_Home_x64_Français": "https://archive.org/download/win-10-22-h-2-french-x-64/Win10_22H2_French_x64.iso",
-    "windows_Windows 10_Pro_x64_Français": "https://archive.org/download/win-10-22-h-2-french-x-64/Win10_22H2_French_x64.iso",
-    "windows_Windows 10_Enterprise_x64_Français": "https://archive.org/download/win-10-22-h-2-french-x-64/Win10_22H2_French_x64.iso",
-    "windows_Windows 10_Home_x86_Français": "https://archive.org/download/win-10-22-h-2-french-x-32/Win10_22H2_French_x32.iso",
-    "windows_Windows 10_Pro_x86_Français": "https://archive.org/download/win-10-22-h-2-french-x-32/Win10_22H2_French_x32.iso",
-    "windows_Windows 10_Enterprise_x86_Français": "https://archive.org/download/win-10-22-h-2-french-x-32/Win10_22H2_French_x32.iso",
+    // Français
+    "windows_Windows 10_MultiEdition_x64_Français": "https://archive.org/download/win-10-22-h-2-french-x-64/Win10_22H2_French_x64.iso",
+    "windows_Windows 10_MultiEdition_x86_Français": "https://archive.org/download/win-10-22-h-2-french-x-32/Win10_22H2_French_x32.iso",
+    // Anglais
+    "windows_Windows 10_MultiEdition_x64_Anglais": "https://archive.org/download/en-us_windows_10_consumer_editions_version_22h2_updated_feb_2023_x64_dvd_c29e4bb3/en-us_windows_10_consumer_editions_version_22h2_updated_feb_2023_x64_dvd_c29e4bb3.iso",
+    "windows_Windows 10_MultiEdition_x86_Anglais": "https://archive.org/download/en-us_windows_10_consumer_editions_version_22h2_x86_dvd_90883feb/en-us_windows_10_consumer_editions_version_22h2_x86_dvd_90883feb.iso",
     // Windows XP
-    "windows_Windows XP_Professional_x86_Français": "https://archive.org/download/fr_windows_xp_professional_with_service_pack_3_x86_cd_vl_x14-73982_202012/fr_windows_xp_professional_with_service_pack_3_x86_cd_vl_x14-73982.iso" ,
+    // Français
+    "windows_Windows XP_Professional_x86_Français": "https://archive.org/download/fr_windows_xp_professional_with_service_pack_3_x86_cd_vl_x14-73982_202012/fr_windows_xp_professional_with_service_pack_3_x86_cd_vl_x14-73982.iso",
+    // Anglais
+    "windows_Windows XP_Professional_x86_Anglais": "https://archive.org/download/WinXPProSP3x86/en_windows_xp_professional_with_service_pack_3_x86_cd_vl_x14-73974.iso",
     // Ubuntu 
     "linux_Ubuntu_24.04 LTS_x64_Multilangue": "https://releases.ubuntu.com/24.04.2/ubuntu-24.04.2-desktop-amd64.iso",
     "linux_Ubuntu_25.04_x64_Multilangue": "https://releases.ubuntu.com/25.04/ubuntu-25.04-desktop-amd64.iso",
