@@ -1,4 +1,4 @@
-# ISO DOWNLOADER !
+# ISO DOWNLOADER ()
 
 **ISO DOWNLOADER** est un site web permettant de télécharger facilement et en toute sécurité des images ISO de différents systèmes d’exploitation.
 
@@ -14,4 +14,4 @@
 - 📥 Centralisation des téléchargements sur une seule plateforme claire
 - ♻️ Mises à jour + ajouts fréquentes des liens et des distributions
 
-**Créé avec ❤️ par Itm0z**
+**Créé avec ❤️ par Itm0z** :)
