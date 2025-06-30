@@ -16,7 +16,7 @@ const data = {
       languages: ["Français", "Anglais"]
     },
     "Windows 8.1": {
-      editions: ["Home", "Pro", "Enterprise"],
+      editions: ["MultiEdition"],
       languages: ["Français", "Anglais", "Italien", "Espagnol"]
     },      
     "Windows 7": {
@@ -30,9 +30,13 @@ const data = {
   },
   linux: {
     "Ubuntu": {
-      editions: ["24.04 LTS", "25.04"],
+      editions: ["24.04.2", "25.04", "23.10.1", "23.04", "22.10", "22.04.4 LTS", "21.10", "21.04", "20.10", "20.04.5"],
       languages: ["Multilangue"]
     },
+    "Lubuntu": {
+      editions: ["24.04.2", "25.04"],
+      languages: ["Multilangue"]
+    },    
     "Debian": {
       editions: ["12.11 Bookworm"],
       languages: ["Multilangue"]
@@ -80,33 +84,17 @@ const downloadLinks = {
     "windows_Windows 7_Home Premium_x86_Anglais": "https://archive.org/download/windows-7-home-prem-english/Win7_HomePrem_SP1_English_x32.iso",
     // Windows 8.1
     // Français
-    "windows_Windows 8.1_Home_x64_Français": "https://archive.org/download/win-8.1/Win8.1_French_x64.iso",
-    "windows_Windows 8.1_Pro_x64_Français": "https://archive.org/download/win-8.1/Win8.1_French_x64.iso",
-    "windows_Windows 8.1_Entreprise_x64_Français": "https://archive.org/download/win-8.1/Win8.1_French_x64.iso",
-    "windows_Windows 8.1_Home_x86_Français": "https://archive.org/download/win-8.1/Win8.1_French_x32.iso",
-    "windows_Windows 8.1_Pro_x86_Français": "https://archive.org/download/win-8.1/Win8.1_French_x32.iso",
-    "windows_Windows 8.1_Entreprise_x86_Français": "https://archive.org/download/win-8.1/Win8.1_French_x32.iso",
+    "windows_Windows 8.1_MultiEdition_x64_Français": "https://archive.org/download/win-8.1/Win8.1_French_x64.iso",
+    "windows_Windows 8.1_MultiEdition_x86_Français": "https://archive.org/download/win-8.1/Win8.1_French_x32.iso",
     // Anglais
-    "windows_Windows 8.1_Home_x64_Anglais": "https://archive.org/download/win-8.1/Win8.1_EnglishUS_x64.iso",
-    "windows_Windows 8.1_Pro_x64_Anglais": "https://archive.org/download/win-8.1/Win8.1_EnglishUS_x64.iso",
-    "windows_Windows 8.1_Entreprise_x64_Anglais": "https://archive.org/download/win-8.1/Win8.1_EnglishUS_x64.iso",
-    "windows_Windows 8.1_Home_x86_Anglais": "https://archive.org/download/win-8.1/Win8.1_EnglishUS_x32.iso",
-    "windows_Windows 8.1_Pro_x86_Anglais": "https://archive.org/download/win-8.1/Win8.1_EnglishUS_x32.iso",
-    "windows_Windows 8.1_Entreprise_x86_Anglais": "https://archive.org/download/win-8.1/Win8.1_EnglishUS_x32.iso",
+    "windows_Windows 8.1_MultiEdition_x64_Anglais": "https://archive.org/download/win-8.1/Win8.1_EnglishUS_x64.iso",
+    "windows_Windows 8.1_MultiEdition_x86_Anglais": "https://archive.org/download/win-8.1/Win8.1_EnglishUS_x32.iso",
     // Italien
-    "windows_Windows 8.1_Home_x64_Italien": "https://archive.org/download/win-8.1/Win8.1_Italian_x64.iso",
-    "windows_Windows 8.1_Pro_x64_Italien": "https://archive.org/download/win-8.1/Win8.1_Italian_x64.iso",
-    "windows_Windows 8.1_Entreprise_x64_Italien": "https://archive.org/download/win-8.1/Win8.1_Italian_x64.iso",
-    "windows_Windows 8.1_Home_x86_Italien": "https://archive.org/download/win-8.1/Win8.1_Italian_x32.iso",
-    "windows_Windows 8.1_Pro_x86_Italien": "https://archive.org/download/win-8.1/Win8.1_Italian_x32.iso",
-    "windows_Windows 8.1_Entreprise_x86_Italien": "https://archive.org/download/win-8.1/Win8.1_Italian_x32.iso",  
+    "windows_Windows 8.1_MultiEdition_x64_Italien": "https://archive.org/download/win-8.1/Win8.1_Italian_x64.iso",
+    "windows_Windows 8.1_MultiEdition_x86_Italien": "https://archive.org/download/win-8.1/Win8.1_Italian_x32.iso",
     // Espagnol
-    "windows_Windows 8.1_Home_x64_Espagnol": "https://archive.org/download/win-8.1/Win8.1_Spanish_x64.iso",
-    "windows_Windows 8.1_Pro_x64_Espagnol": "https://archive.org/download/win-8.1/Win8.1_Spanish_x64.iso",
-    "windows_Windows 8.1_Entreprise_x64_Espagnol": "https://archive.org/download/win-8.1/Win8.1_Spanish_x64.iso",
-    "windows_Windows 8.1_Home_x86_Espagnol": "https://archive.org/download/win-8.1/Win8.1_Spanish_x32.iso",
-    "windows_Windows 8.1_Pro_x86_Espagnol": "https://archive.org/download/win-8.1/Win8.1_Spanish_x32.iso",
-    "windows_Windows 8.1_Entreprise_x86_Espagnol": "https://archive.org/download/win-8.1/Win8.1_Spanish_x32.iso",
+    "windows_Windows 8.1_MultiEdition_x64_Espagnol": "https://archive.org/download/win-8.1/Win8.1_Spanish_x64.iso",
+    "windows_Windows 8.1_MultiEdition_x86_Espagnol": "https://archive.org/download/win-8.1/Win8.1_Spanish_x32.iso",
     // Windows 10
     // Français
     "windows_Windows 10_MultiEdition_x64_Français": "https://archive.org/download/win-10-22-h-2-french-x-64/Win10_22H2_French_x64.iso",
@@ -120,8 +108,19 @@ const downloadLinks = {
     // Anglais
     "windows_Windows XP_Professional_x86_Anglais": "https://archive.org/download/WinXPProSP3x86/en_windows_xp_professional_with_service_pack_3_x86_cd_vl_x14-73974.iso",
     // Ubuntu 
-    "linux_Ubuntu_24.04 LTS_x64_Multilangue": "https://releases.ubuntu.com/24.04.2/ubuntu-24.04.2-desktop-amd64.iso",
+    "linux_Ubuntu_24.04.02_x64_Multilangue": "https://releases.ubuntu.com/24.04.2/ubuntu-24.04.2-desktop-amd64.iso",
     "linux_Ubuntu_25.04_x64_Multilangue": "https://releases.ubuntu.com/25.04/ubuntu-25.04-desktop-amd64.iso",
+    "linux_Ubuntu_23.10.1_x64_Multilangue": "https://old-releases.ubuntu.com/releases/mantic/ubuntu-23.10.1-desktop-amd64.iso",
+    "linux_Ubuntu_23.04_x64_Multilangue": "https://old-releases.ubuntu.com/releases/lunar/ubuntu-23.04-desktop-amd64.iso",
+    "linux_Ubuntu_22.10_x64_Multilangue": "https://old-releases.ubuntu.com/releases/kinetic/ubuntu-22.10-desktop-amd64.iso",
+    "linux_Ubuntu_22.04.4 LTS_x64_Multilangue": "https://old-releases.ubuntu.com/releases/jammy/ubuntu-22.04.4-desktop-amd64.iso",
+    "linux_Ubuntu_21.10_x64_Multilangue": "https://old-releases.ubuntu.com/releases/impish/ubuntu-21.10-desktop-amd64.iso",
+    "linux_Ubuntu_21.04_x64_Multilangue": "https://old-releases.ubuntu.com/releases/hirsute/ubuntu-21.04-desktop-amd64.iso",
+    "linux_Ubuntu_20.10_x64_Multilangue": "https://old-releases.ubuntu.com/releases/groovy/ubuntu-20.10-desktop-amd64.iso",
+    "linux_Ubuntu_20.04.5_x64_Multilangue": "https://old-releases.ubuntu.com/releases/focal/ubuntu-20.04.5-desktop-amd64.iso",
+    // Lubuntu
+    "linux_Lubuntu_24.04.2_x64_Multilangue": "https://cdimage.ubuntu.com/lubuntu/releases/24.04.2/release/lubuntu-24.04.2-desktop-amd64.iso",
+    "linux_Lubuntu_25.04_x64_Multilangue": "https://cdimage.ubuntu.com/lubuntu/releases/25.04/release/lubuntu-25.04-desktop-amd64.iso",
     // Debian
     "linux_Debian_12.11 Bookworm_x64_Multilangue": "https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.11.0-amd64-netinst.iso",
     // macOS

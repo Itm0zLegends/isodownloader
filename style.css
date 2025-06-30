@@ -111,3 +111,10 @@ button:disabled {
   margin-bottom: 8px;
   color: #4dabf7;
 }
+
+.date {
+  font-size: 1rem;
+  color: #bbb;
+  margin-bottom: 10px;
+  text-align: center;
+}
