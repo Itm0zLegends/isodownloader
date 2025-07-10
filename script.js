@@ -102,6 +102,9 @@ const downloadLinks = {
     // Anglais
     "windows_Windows 10_MultiEdition_x64_Anglais": "https://archive.org/download/en-us_windows_10_consumer_editions_version_22h2_updated_feb_2023_x64_dvd_c29e4bb3/en-us_windows_10_consumer_editions_version_22h2_updated_feb_2023_x64_dvd_c29e4bb3.iso",
     "windows_Windows 10_MultiEdition_x86_Anglais": "https://archive.org/download/en-us_windows_10_consumer_editions_version_22h2_x86_dvd_90883feb/en-us_windows_10_consumer_editions_version_22h2_x86_dvd_90883feb.iso",
+    // Windows 11
+    // Français
+    "windows_Windows 11_MultiEdition_x64_Français": "https://archive.org/download/win11-24h2-x64-fr/Win11_24H2_French_x64.iso",
     // Windows XP
     // Français
     "windows_Windows XP_Professional_x86_Français": "https://archive.org/download/fr_windows_xp_professional_with_service_pack_3_x86_cd_vl_x14-73982_202012/fr_windows_xp_professional_with_service_pack_3_x86_cd_vl_x14-73982.iso",
